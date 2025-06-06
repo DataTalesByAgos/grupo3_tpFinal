@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MessageCircle, ArrowRight } from "lucide-react"
 
+declare global {
+  interface Window {
+    botpressWebChat?: {
+      sendEvent: (event: { type: string }) => void;
+    };
+  }
+}
+
 export function EstimationForm() {
   const handleStartEstimation = () => {
-    // Aquí integrarás tu chatbot de Botpress
-    window.open("https://your-botpress-chatbot-url.com", "_blank")
+    // No hacer nada
   }
 
   return (

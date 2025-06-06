@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Estimador de Costos de Construcción',
+  title: 'ConstruIA',
   description: 'Calcula los costos de tu proyecto de construcción',
 }
 
@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <title>ConstruIA</title>
         <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" async></script>
         <script src="https://files.bpcontent.cloud/2025/06/05/20/20250605205125-BWUT65ZS.js" async></script>
       </head>

@@ -3,10 +3,17 @@
 import { Button } from "@/components/ui/button"
 import { Calculator, Home, Users } from "lucide-react"
 
+declare global {
+  interface Window {
+    botpressWebChat?: {
+      sendEvent: (event: { type: string }) => void;
+    };
+  }
+}
+
 export function HeroSection() {
   const handleChatbotClick = () => {
-    // Aquí integrarás tu chatbot de Botpress
-    window.open("https://your-botpress-chatbot-url.com", "_blank")
+    // No hacer nada
   }
 
   return (
